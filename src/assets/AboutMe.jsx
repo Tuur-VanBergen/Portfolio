@@ -22,7 +22,7 @@ function AboutMe() {
                         <div>In de toekomst wil ik me verder verdiepen in full-stack development of software engineering. Mijn droom is om te werken aan betekenisvolle projecten — bijvoorbeeld tools of applicaties die het dagelijks leven van mensen echt verbeteren. Op lange termijn zou ik graag mijn eigen project of start-up opstarten, waarin ik mijn creativiteit en passie voor IT volledig kwijt kan.</div>
                     </div>
                     <div className="flex flex-row pt-4">
-                        <Link to="/Cv" className="hover:cursor-pointer font-semibold border-2 border-[#8f1600] bg-[#8f1600] text-white rounded-full py-2 px-4 my-4 mx-2 md:mx-4 transition-all duration-300 ease-in-out hover:bg-[#E1A037] hover:border-[#E1A037] hover:text-[#8f1600]">
+                        <Link to="/Cv" className="hidden lg:inline-block hover:cursor-pointer font-semibold border-2 border-[#8f1600] bg-[#8f1600] text-white rounded-full py-2 px-4 my-4 mx-2 md:mx-4 transition-all duration-300 ease-in-out hover:bg-[#E1A037] hover:border-[#E1A037] hover:text-[#8f1600]">
                             Open CV
                         </Link>
                         <a href="/CV_TuurVanBergen.pdf" download className="hover:cursor-pointer font-semibold border-2 border-[#8f1600] text-[#8f1600] rounded-full py-2 px-4 my-4 mx-2 md:mx-4 transition-all duration-300 ease-in-out hover:bg-[#E1A037] hover:text-white hover:border-[#E1A037]">
