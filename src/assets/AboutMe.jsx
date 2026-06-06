@@ -37,7 +37,7 @@ function AboutMe() {
                             <FontAwesomeIcon icon={faLinkedinIn} />
                         </a>
 
-                        <a href="/CV_TuurVanBergen.pdf" download className="hover:cursor-pointer font-semibold border-2 border-[#8f1600] text-[#8f1600] rounded-full py-2 px-4 my-4 mx-2 md:mx-4 transition-all duration-300 ease-in-out hover:bg-[#E1A037] hover:text-white hover:border-[#E1A037]">
+                        <a href="/CV_Tuur_Van_Bergen.pdf" download className="hover:cursor-pointer font-semibold border-2 border-[#8f1600] text-[#8f1600] rounded-full py-2 px-4 my-4 mx-2 md:mx-4 transition-all duration-300 ease-in-out hover:bg-[#E1A037] hover:text-white hover:border-[#E1A037]">
                             Download CV
                         </a>
                     </div>
