@@ -1,5 +1,8 @@
+import { Mail } from 'lucide-react';
 import CodeTag from './CodeTag';
-import { Link } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
+
 
 function AboutMe() {
     return (
@@ -15,16 +18,25 @@ function AboutMe() {
                     </div>
                     <div>
                         <div className="text-xl text-[#8f1600] font-semibold pt-4 py-2">Scouts Bosvogels</div>
-                        <div>Naast mijn studies ben ik actief als leiding bij de Scouts. Daar leer ik niet alleen om met een groep om te gaan, maar ook om verantwoordelijkheid te nemen, problemen creatief op te lossen en initiatief te tonen. Die ervaringen hebben mij als persoon sterker gemaakt en helpen me ook binnen IT-projecten, waar samenwerking en zelfstandigheid belangrijk zijn.</div>
+                        <div>Naast mijn studies ben ik actief als leiding en groepsleiding bij de Scouts. Daar leer ik niet alleen om met een groep om te gaan, maar ook om verantwoordelijkheid te nemen, problemen creatief op te lossen en initiatief te tonen. Die ervaringen hebben mij als persoon sterker gemaakt en helpen me ook binnen IT-projecten, waar samenwerking en zelfstandigheid belangrijk zijn.</div>
                     </div>
                     <div>
                         <div className="text-xl text-[#8f1600] font-semibold pt-4 py-2">Toekomstdromen & professionele ambities</div>
                         <div>In de toekomst wil ik me verder verdiepen in full-stack development of software engineering. Mijn droom is om te werken aan betekenisvolle projecten — bijvoorbeeld tools of applicaties die het dagelijks leven van mensen echt verbeteren. Op lange termijn zou ik graag mijn eigen project of start-up opstarten, waarin ik mijn creativiteit en passie voor IT volledig kwijt kan.</div>
                     </div>
                     <div className="flex flex-row pt-4">
-                        <Link to="/Cv" className="hidden lg:inline-block hover:cursor-pointer font-semibold border-2 border-[#8f1600] bg-[#8f1600] text-white rounded-full py-2 px-4 my-4 mx-2 md:mx-4 transition-all duration-300 ease-in-out hover:bg-[#E1A037] hover:border-[#E1A037] hover:text-[#8f1600]">
-                            Open CV
-                        </Link>
+                        <a href="mailto:tuur.vb03@gmail.com" className="hover:cursor-pointer font-semibold border-2 border-[#8f1600] text-[#8f1600] rounded-full py-2 px-4 my-4 mx-2 md:mx-4 transition-all duration-300 ease-in-out hover:bg-[#E1A037] hover:text-white hover:border-[#E1A037]">
+                            <Mail />
+                        </a>
+                        <a 
+                            href="https://www.linkedin.com/in/tuur-van-bergen"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="hover:cursor-pointer font-semibold border-2 border-[#8f1600] text-[#8f1600] rounded-full py-2 px-4 my-4 mx-2 md:mx-4 transition-all duration-300 ease-in-out hover:bg-[#E1A037] hover:text-white hover:border-[#E1A037]"
+                        >
+                            <FontAwesomeIcon icon={faLinkedinIn} />
+                        </a>
+
                         <a href="/CV_TuurVanBergen.pdf" download className="hover:cursor-pointer font-semibold border-2 border-[#8f1600] text-[#8f1600] rounded-full py-2 px-4 my-4 mx-2 md:mx-4 transition-all duration-300 ease-in-out hover:bg-[#E1A037] hover:text-white hover:border-[#E1A037]">
                             Download CV
                         </a>

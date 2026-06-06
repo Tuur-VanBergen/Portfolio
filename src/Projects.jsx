@@ -12,12 +12,128 @@ function Projects() {
             <div className="flex flex-col gap-8 lg:flex-row-reverse">
                 <div className="w-full lg:w-1/2 flex flex-col">
                     <div className="w-full mb-6 mt-4 sm:mt-0 flex justify-center">
+                        <CodeTag size="m" rotate="r" className="whitespace-nowrap">SKIL3 Project</CodeTag>
+                    </div>
+                    <div>
+                        <h3 className="text-xl font-semibold text-[#8f1600] py-2">Context & Background</h3>
+                        <p>
+                            In dit groepproject ontwikkelden we voor Easy2Drop een nieuw systeem voor hun volgende generatie pakketboxen. We werkten zowel aan het scherm en de hardware‑aansturing van de sloten, als aan het aanpassen van de website om nieuwe boxen te registreren. Daarnaast bouwden we een mobiele app waarmee klanten een plaats kunnen reserveren en hun pakketstatus kunnen opvolgen. Het project combineerde embedded software, webontwikkeling en mobile development in één realistische bedrijfsopdracht.                        </p>
+                    </div>
+                    <div>
+                        <h3 className="text-xl font-semibold text-[#8f1600] pt-4 py-2">Concrete & Specific Realisations</h3>
+                        <ul className="list-disc list-inside">
+                            <li>Aanpassen van bestaande software</li>
+                            <li>Uitwerken van app voor op de pakketbox</li>
+                            <li>Aansturen van sloten</li>
+                            <li>Mobiele app die dezelfde functionaliteiten van de website heeft</li>
+                            <li>...</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 className="text-xl font-semibold text-[#8f1600] pt-4 py-2">What I Learned</h3>
+                        <p>
+                            Ik heb mijn vaardigheden in Flutter, NestJS en Vue versterkt door nieuwe functionaliteit te bouwen én verder te werken op een bestaande codebase. Ik leerde hoe ik bestaande structuren analyseer, uitbreid en optimaliseer, en hoe ik schaalbare componenten en API‑koppelingen opzet binnen een groter systeem.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 className="text-xl font-semibold text-[#8f1600] pt-4 py-2">My Contribution</h3>
+                        <p>
+                            Ik heb tijdens dit project de API uitgebreid en aangepast om nieuwe functionaliteit te ondersteunen, en leerde hoe ik bestaande endpoints analyseer, optimaliseer en uitbreid zonder de bestaande werking te breken. Daarnaast ontwikkelde ik de volledige mobiele app in Flutter, waardoor ik mijn kennis in state‑management, navigatie, API‑integratie en het bouwen van herbruikbare, schaalbare UI‑componenten sterk heb verdiept.
+                        </p>
+                    </div>
+                </div>
+                <div className="w-full lg:w-1/2 mt-16 -ml-4 lg:-ml-32 -mb-10 flex">
+                    <svg className="flex overflow-visible w-full h-auto" viewBox="0 0 700 400" xmlns="http://www.w3.org/2000/svg" >
+                        <defs>
+                            <clipPath id="cp">
+                                <path id="path"
+                                    d="M54.4,-57.5C64.3,-44.5,61.9,-22.2,62.1,0.2C62.4,22.7,65.3,45.5,55.4,54C45.5,62.5,22.7,56.8,0.6,56.2C-21.6,55.6,-43.1,60.2,-54.9,51.7C-66.7,43.1,-68.7,21.6,-65.8,3C-62.8,-15.7,-54.9,-31.3,-43.1,-44.3C-31.3,-57.3,-15.7,-67.5,3.3,-70.8C22.2,-74.1,44.5,-70.4,54.4,-57.5Z"
+                                    transform="translate(350,200) scale(-5,2.9)" />
+                            </clipPath>
+                        </defs>
+                        <path fill="#8f1600" d="M54.4,-57.5C64.3,-44.5,61.9,-22.2,62.1,0.2C62.4,22.7,65.3,45.5,55.4,54C45.5,62.5,22.7,56.8,0.6,56.2C-21.6,55.6,-43.1,60.2,-54.9,51.7C-66.7,43.1,-68.7,21.6,-65.8,3C-62.8,-15.7,-54.9,-31.3,-43.1,-44.3C-31.3,-57.3,-15.7,-67.5,3.3,-70.8C22.2,-74.1,44.5,-70.4,54.4,-57.5Z"
+                            transform="translate(350 200) scale(-5.5,3.5)" />
+                        <foreignObject x="0" y="-120" width="700" height="600" clipPath="url(#cp)">
+                            <video
+                                src="/Easy2Drop.mp4"
+                                autoPlay
+                                playsInline
+                                className="object-contain h-full"
+                            />
+                        </foreignObject>
+                    </svg>
+                </div>
+            </div>
+            <div className="flex flex-col mt-24 gap-8 lg:flex-row">
+                <div className="w-full lg:w-1/2 flex flex-col">
+                    <div className="w-full mb-6 flex justify-center">
+                        <CodeTag size="m" rotate="l">Software Engineering</CodeTag>
+                    </div>
+                    <div>
+                        <h3 className="text-xl font-semibold text-[#8f1600] py-2">Context & Background</h3>
+                        <p>
+                            Voor dit groepsproject ontwikkelden we een volledige website en dashboard voor Appie’s Legobib, een initiatief voor kinderen die langere tijd in het ziekenhuis verblijven. Via deze website kunnen ze eenvoudig LEGO‑sets uitlenen, reserveren en terugbrengen tijdens hun verblijf.
+                        <br/>
+                            We bouwden zowel de publieke website voor de kinderen als het beheer­dashboard voor vrijwilligers, waarin sets kunnen worden toegevoegd, beheerd en opgevolgd. Het project bood ons de kans om een realistische situatie na te bootsen waarin we een digitaal platform moesten ontwerpen dat zowel kindvriendelijk, overzichtelijk als praktisch is voor de organisatie.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 className="text-xl font-semibold text-[#8f1600] pt-4 py-2">Concrete & Specific Realisations</h3>
+                        <ul className="list-disc list-inside">
+                            <li>Inlog- en registratiesysteem met rolverdeling</li>
+                            <li>Catalogus</li>
+                            <li>Integration with external APIs</li>
+                            <li>Second place in pitching contest</li>
+                            <li>...</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 className="text-xl font-semibold text-[#8f1600] pt-4 py-2">What I Learned</h3>
+                        <p>
+                            Ik heb tijdens dit project veel bijgeleerd over Domain‑Driven Design en Clean Architecture door een schaalbare en onderhoudbare .NET API op te bouwen. Daarnaast verdiepte ik mijn kennis in Angular, waar ik leerde werken met component‑gedreven ontwikkeling, services en state‑management. Ook deed ik ervaring op met het integreren van externe APIs, waaronder het opzetten van duidelijke interfaces, error‑handling en het veilig verwerken van externe data.
+                        </p>
+                    </div>
+                    
+                    <div>
+                        <h3 className="text-xl font-semibold text-[#8f1600] pt-4 py-2">My Contribution</h3>
+                        <p>
+                            Ik heb in dit project de volledige API ontwikkeld, inclusief de structuur, endpoints en dataverwerking. Daarnaast heb ik de dashboardpagina’s ontworpen en geoptimaliseerd, waarbij ik focuste op een duidelijke UI, efficiënte workflows en een vlotte integratie met de backend.
+                        </p>
+                    </div>
+                </div>
+                <div className="w-full lg:w-1/2 mt-16 -ml-4 -mb-10 flex">
+                    <svg className="flex overflow-visible w-full h-auto" viewBox="0 0 700 400" xmlns="http://www.w3.org/2000/svg" >
+                        <defs>
+                            <clipPath id="cp">
+                                <path id="path"
+                                    d="M54.4,-57.5C64.3,-44.5,61.9,-22.2,62.1,0.2C62.4,22.7,65.3,45.5,55.4,54C45.5,62.5,22.7,56.8,0.6,56.2C-21.6,55.6,-43.1,60.2,-54.9,51.7C-66.7,43.1,-68.7,21.6,-65.8,3C-62.8,-15.7,-54.9,-31.3,-43.1,-44.3C-31.3,-57.3,-15.7,-67.5,3.3,-70.8C22.2,-74.1,44.5,-70.4,54.4,-57.5Z"
+                                    transform="translate(350,200) scale(-5,2.9)" />
+                            </clipPath>
+                        </defs>
+                        <path fill="#8f1600" d="M54.4,-57.5C64.3,-44.5,61.9,-22.2,62.1,0.2C62.4,22.7,65.3,45.5,55.4,54C45.5,62.5,22.7,56.8,0.6,56.2C-21.6,55.6,-43.1,60.2,-54.9,51.7C-66.7,43.1,-68.7,21.6,-65.8,3C-62.8,-15.7,-54.9,-31.3,-43.1,-44.3C-31.3,-57.3,-15.7,-67.5,3.3,-70.8C22.2,-74.1,44.5,-70.4,54.4,-57.5Z"
+                            transform="translate(350 200) scale(-5.5,3.5)" />
+                        
+                        <foreignObject x="0" y="-120" width="700" height="600" clipPath="url(#cp)">
+                            <video
+                                src="/Legobib.mp4"
+                                autoPlay
+                                playsInline
+                                muted
+                                className="object-contain h-full"
+                            />
+                        </foreignObject>
+                    </svg>
+                </div>
+            </div>
+            <div className="flex flex-col mt-24 gap-8 lg:flex-row-reverse">
+                <div className="w-full lg:w-1/2 flex flex-col">
+                    <div className="w-full mb-6 mt-4 sm:mt-0 flex justify-center">
                         <CodeTag size="m" rotate="r" className="whitespace-nowrap">SKIL2 Semester 2 Project</CodeTag>
                     </div>
                     <div>
                         <h3 className="text-xl font-semibold text-[#8f1600] py-2">Context & Background</h3>
                         <p>
-                            In dit schoolproject moesten we een systeem maken voor een de zwemlessen en zwemfeestjes van een lokaal hotel in de Kempen genaamd kempenrust. Onze opdrachtgever was een leerkracht die de rol van hoteleigenaar op zich nam. Het doel was om een realistische situatie na te bootsen en het volledige product te ontwikkelen.
+                            In dit groepsproject moesten we een systeem maken voor een de zwemlessen en zwemfeestjes van een lokaal hotel in de Kempen genaamd kempenrust. Onze opdrachtgever was een leerkracht die de rol van hoteleigenaar op zich nam. Het doel was om een realistische situatie na te bootsen en het volledige product te ontwikkelen.
                         </p>
                     </div>
                     <div>
@@ -107,7 +223,7 @@ function Projects() {
                     <div>
                         <h3 className="text-xl font-semibold text-[#8f1600] py-2">Context & Background</h3>
                         <p>
-                            Voor dit project kregen we de vrijheid om zelf een onderwerp te kiezen binnen het vak FullStack essentials. Samen met mijn groep besloten we een digitale oplossing te ontwikkelen voor een fictieve brouwerij genaamd Barley&Hops.
+                            Voor dit groepsproject kregen we de vrijheid om zelf een onderwerp te kiezen binnen het vak FullStack essentials. Samen met mijn groep besloten we een digitale oplossing te ontwikkelen voor een fictieve brouwerij genaamd Barley&Hops.
                         </p>
                     </div>
                     <div>
@@ -146,50 +262,8 @@ function Projects() {
                     </svg>
                 </div>
             </div>
-            <div className="flex flex-col mt-24 gap-8 lg:flex-row">
-                <div className="w-full lg:w-1/2 flex flex-col">
-                    <div className="w-full mb-6 flex justify-center">
-                        <CodeTag size="m" rotate="l">SKIL2 Semester 1 Project</CodeTag>
-                    </div>
-                    <div>
-                        <h3 className="text-xl font-semibold text-[#8f1600] py-2">Context & Background</h3>
-                        <p>
-                            In dit schoolproject moesten we in groep de functionaliteiten en benodigdheden van een theater uitwerken voor een fictief theater genaamd de Beerse Bende. Onze opdrachtgever was een leerkracht die de rol van theatereigenaar op zich nam. Het doel was om een realistische situatie na te bootsen en het technische deel van het product te designen in figma.
-                        </p>
-                    </div>
-                    <div>
-                        <h3 className="text-xl font-semibold text-[#8f1600] pt-4 py-2">Concrete & Specific Realisations</h3>
-                        <ul className="list-disc list-inside">
-                            <li>Technisch design</li>
-                            <li>Functionaliteiten tonen</li>
-                            <li>Verwachtingen van klant voltooid</li>
-                            <li>...</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3 className="text-xl font-semibold text-[#8f1600] pt-4 py-2">What I Learned</h3>
-                        <p>
-                            Tijdens dit project heb ik de basis van Figma geleerd, hierbij hebben we ons vooral gericht op de technische kant en de functionaliteiten van het product. Dit project gaf me de kans om logisch denken te verbeteren en hoe we klantmeetings kunnen voeren en voorbereiden.
-                        </p>
-                    </div>
-                </div>
-                <div className="w-full lg:w-1/2 -ml-4 mt-16 mb-10 lg:-mb-10 flex">
-                    <svg className="flex overflow-visible w-full h-auto" viewBox="0 0 700 400" xmlns="http://www.w3.org/2000/svg" >
-                        <defs>
-                            <clipPath id="cp">
-                                <path id="path"
-                                    d="M54.4,-57.5C64.3,-44.5,61.9,-22.2,62.1,0.2C62.4,22.7,65.3,45.5,55.4,54C45.5,62.5,22.7,56.8,0.6,56.2C-21.6,55.6,-43.1,60.2,-54.9,51.7C-66.7,43.1,-68.7,21.6,-65.8,3C-62.8,-15.7,-54.9,-31.3,-43.1,-44.3C-31.3,-57.3,-15.7,-67.5,3.3,-70.8C22.2,-74.1,44.5,-70.4,54.4,-57.5Z"
-                                    transform="translate(350,200) scale(-5,2.9)" />
-                            </clipPath>
-                        </defs>
-                        <path fill="#8f1600" d="M54.4,-57.5C64.3,-44.5,61.9,-22.2,62.1,0.2C62.4,22.7,65.3,45.5,55.4,54C45.5,62.5,22.7,56.8,0.6,56.2C-21.6,55.6,-43.1,60.2,-54.9,51.7C-66.7,43.1,-68.7,21.6,-65.8,3C-62.8,-15.7,-54.9,-31.3,-43.1,-44.3C-31.3,-57.3,-15.7,-67.5,3.3,-70.8C22.2,-74.1,44.5,-70.4,54.4,-57.5Z"
-                            transform="translate(350 200) scale(-5.5,3.5)" />
-                        <image href="/Figma.png" clipPath="url(#cp)" x="30" y="-100" width="700" height="600" />
-                    </svg>
-                </div>
-            </div>
         </div>
-        </>
+    </>
     )
     
 }

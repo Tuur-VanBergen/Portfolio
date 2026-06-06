@@ -20,7 +20,7 @@ const Home = () => {
         <div className="h-[10vh] lg:h-[20vh] pt-24 w-full flex justify-center">
             <CodeTag size="l">Welkom&nbsp;!</CodeTag>
         </div>
-        <div className="flex flex-col min-h-[90vh] lg:h-[80vh] lg:min-h-[80vh] lg:flex-row mx-4 lg:mx-20">
+        <div className="flex flex-col min-h-[90vh] lg:h-[80vh] lg:min-h-[80vh] lg:flex-row mx-4 lg:mx-24">
             <div className="w-full lg:w-1/2 flex flex-col h-full items-start py-10 pb-0 justify-between">
                 <div className="w-full lg:hidden flex justify-center items-center mt-20 mb-10">
                     <div className="w-1/2  flex items-end">
@@ -41,19 +41,17 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <div className="space-y-1 font-bold">
-                    <div className="text-[24px] md:text-[36px]">Ik ben <span className="underline text-[#8f1600]">Tuur Van Bergen,</span></div>
-                    <div className="md:text-[32px]">Groepsleiding van Scouts Bosvogels &</div>
-                    <div className="md:text-[32px]">Student AppAi</div>
-                </div>
-                <div className="pe-0 lg:text-lg lg:pe-20">Ik ben altijd leergierig en gepassioneerd door technologie. In mijn vrije tijd blijf ik experimenteren met nieuwe IT-tools en werk ik aan persoonlijke projecten om mijn vaardigheden verder te ontwikkelen.</div>
-                <div className="flex flex-row">
-                    <Link to="/about-me" className="hover:cursor-pointer font-semibold border-2 border-[#8f1600] bg-[#8f1600] text-white rounded-full py-2 px-4 my-4 mx-2 md:mx-4 transition-all duration-300 ease-in-out hover:bg-[#E1A037] hover:border-[#E1A037] hover:text-[#8f1600]">
-                        About me
-                    </Link>
-                    <Link to="/projects" className="hover:cursor-pointer font-semibold border-2 border-[#8f1600] text-[#8f1600] rounded-full py-2 px-4 my-4 mx-2 md:mx-4 transition-all duration-300 ease-in-out hover:bg-[#E1A037] hover:text-white hover:border-[#E1A037]">
-                        Projects
-                    </Link>
+                <div className='flex flex-col h-full justify-center lg:pb-20'>
+                    <div className="space-y-1 font-bold mb-5">
+                        <div className="text-[24px] md:text-[36px]">Ik ben <span className="underline text-[#8f1600]">Tuur Van Bergen,</span></div>
+                        <div className="md:text-[32px]">Groepsleider van Scouts Bosvogels &</div>
+                        <div className="md:text-[32px]">Student AppAi</div>
+                    </div>
+                    <div className="text-lg">
+                        Welkom in mijn portfolio! Hier neem ik je mee door de projecten waar ik het meest trots op ben en geef ik je een duidelijk beeld van mijn groei als ontwikkelaar. Je vindt hier een overzicht van afgeronde projecten, een uitgebreide blik op mijn stage‑ervaring bij Cegeka, en een About Me sectie waarin ik meer vertel over wie ik ben, wat mij motiveert en waar ik naartoe wil.
+                    <br/><br/>
+                    Mijn doel met dit portfolio is om je niet alleen mijn werk te tonen, maar ook de manier waarop ik denk, leer en bouw. Veel plezier met ontdekken!
+                    </div>
                 </div>
             </div>
             <div className="hidden mt-10 lg:mt-0 lg:w-1/2 lg:flex justify-center">

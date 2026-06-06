@@ -1,33 +1,151 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 function NavBar() {
-    return(
-        <div className="fixed z-50 h-20 w-full px-10 lg:px-20 font-raleway">
-            <div className="relative h-12 w-full mt-4 rounded-full bg-[#dddddd] z-50 bg-opacity-85">
-                <div className="absolute top-0 left-0 h-12 w-12 hover:cursor-pointer group">
-                    <Link to="/">
-                        <svg className="absolute z-0 overflow-visible"  transform="scale(1.8)" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                            <path className="fill-[#E1A037] group-hover:fill-[#8f1600] transition-all duration-300 ease-in-out" d="M40.8,-67.4C54,-63.1,66.5,-54.3,72.7,-42.4C78.9,-30.4,78.8,-15.2,79.4,0.3C79.9,15.8,81.1,31.7,75.6,44.8C70,57.9,57.8,68.4,44.1,72.8C30.3,77.2,15.2,75.6,1.7,72.6C-11.7,69.6,-23.5,65.3,-32.6,58.2C-41.7,51.2,-48.1,41.4,-54.8,31.2C-61.4,21,-68.1,10.5,-71.3,-1.8C-74.4,-14.1,-74,-28.3,-68.1,-39.8C-62.3,-51.3,-51.1,-60.2,-38.8,-65C-26.6,-69.9,-13.3,-70.8,0.3,-71.2C13.8,-71.7,27.6,-71.7,40.8,-67.4Z" transform="translate(80 100)" />
-                        </svg>
-                        <img src="Profielfoto zonder achtergrond.png" className="rounded-b-full z-20 relative" alt="" />
-                    </Link>
-                </div>
-                <div className="flex w-full h-full justify-end sm:justify-center items-center">
-                    <Link to="/about-me" className="mx-2 md:mx-5 px-5 h-full rounded-full flex justify-center items-center font-semibold hover:font-bold hover:bg-[#8f1600] hover:text-white transition-all duration-300 ease-in-out">
-                        <div className="flex justify-center items-center">
+    const [scrolled, setScrolled] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(false);
+
+    const handleHomeClick = () => {
+        setMenuOpen(false);
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+
+
+    useEffect(() => {
+        const handleScroll = () => setScrolled(window.scrollY > 50);
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
+    return (
+        <div className="fixed z-50 w-full flex justify-center font-raleway">
+            <div
+                className={`
+                    transition-all duration-300 ease-in-out
+                    flex items-center justify-center
+                    ${scrolled 
+                        ? "bg-[#00000080] text-black w-[90%] mt-3 rounded-2xl shadow-md h-14" 
+                        : "bg-transparent text-black w-full h-16"}
+                `}
+            >
+                <div className="flex w-full h-full justify-between items-center mx-5">
+
+                    {/* Logo */}
+                    <div className="font-light text-2xl h-full">
+                        <Link 
+                            to="/"
+                            className={`px-5 h-full flex items-center font-extralight ${
+                                scrolled ? "text-white" : "text-black"
+                            }`}
+                            onClick={handleHomeClick}
+                        >
+                            TvB
+                        </Link>
+                    </div>
+
+                    {/* Desktop menu */}
+                    <div className="hidden md:flex flex-row h-full">
+                        <Link 
+                            to="/about-me"
+                            className={`transition-all duration-300 px-5 h-full flex items-center font-semibold ${
+                                scrolled 
+                                    ? "hover:bg-[#00000020] text-white" 
+                                    : "hover:bg-[#00000020] hover:text-[#8f1600]"
+                            }`}
+                        >
                             About me
-                        </div>
-                    </Link>
-                    <Link to="/projects" className="mx-2 md:mx-5 px-5 h-full rounded-full flex justify-center items-center font-semibold hover:font-bold hover:bg-[#8f1600] hover:text-white transition-all duration-300 ease-in-out">
-                        <div className="flex justify-center items-center">
+                        </Link>
+
+                        <Link 
+                            to="/projects"
+                            className={`transition-all duration-300 px-5 h-full flex items-center font-semibold ${
+                                scrolled 
+                                    ? "hover:bg-[#00000020] text-white" 
+                                    : "hover:bg-[#00000020] hover:text-[#8f1600]"
+                            }`}
+                        >
                             Projects
-                        </div>
-                    </Link>
+                        </Link>
+
+                        <Link 
+                            to="/internship"
+                            className={`transition-all duration-300 px-5 h-full flex items-center font-semibold ${
+                                scrolled 
+                                    ? "hover:bg-[#00000020] text-white" 
+                                    : "hover:bg-[#00000020] hover:text-[#8f1600]"
+                            }`}
+                        >
+                            Internship
+                        </Link>
+                    </div>
+
+                    {/* Mobile hamburger */}
+                    <button 
+                        className="md:hidden flex flex-col gap-1"
+                        onClick={() => setMenuOpen(true)}
+                    >
+                        <span className={`block w-6 h-[2px] ${scrolled ? "bg-white" : "bg-black"}`}></span>
+                        <span className={`block w-6 h-[2px] ${scrolled ? "bg-white" : "bg-black"}`}></span>
+                        <span className={`block w-6 h-[2px] ${scrolled ? "bg-white" : "bg-black"}`}></span>
+                    </button>
                 </div>
             </div>
-        </div>
 
-    )
+            {/* FULLSCREEN OVERLAY MENU */}
+            {menuOpen && (
+    <div 
+        className="fixed inset-0 bg-black/70 backdrop-blur-sm flex flex-col items-center justify-center text-white z-[60]"
+    >
+        {/* Home icon (top-left) */}
+        <Link 
+            to="/"
+            className={`absolute top-5 left-5 text-white font-extralight text-3xl ${
+                scrolled ? "text-white" : "text-black"
+            }`}
+            onClick={handleHomeClick}
+        >
+            TvB
+        </Link>
+
+        {/* Close button */}
+        <button 
+            className="absolute top-5 right-5 text-3xl font-light"
+            onClick={() => setMenuOpen(false)}
+        >
+            ✕
+        </button>
+
+        {/* Menu links */}
+        <div className="flex flex-col gap-8 text-3xl font-semibold">
+            <Link 
+                to="/about-me"
+                onClick={() => setMenuOpen(false)}
+                className="hover:text-gray-300 transition"
+            >
+                About me
+            </Link>
+
+            <Link 
+                to="/projects"
+                onClick={() => setMenuOpen(false)}
+                className="hover:text-gray-300 transition"
+            >
+                Projects
+            </Link>
+
+            <Link 
+                to="/internship"
+                onClick={() => setMenuOpen(false)}
+                className="hover:text-gray-300 transition"
+            >
+                Internship
+            </Link>
+        </div>
+    </div>
+)}
+
+        </div>
+    );
 }
 
 export default NavBar;
