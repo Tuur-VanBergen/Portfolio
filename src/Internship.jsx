@@ -19,6 +19,8 @@ const Internship = () => {
                     Ik voerde een grondige analyse uit van de bestaande backend en database, waarna ik een volledig nieuwe structuur implementeerde volgens Clean Architecture en Domain‑Driven Design. Daarnaast refactorde ik de database, verbeterde ik de frontend‑integratie, en werkte ik aan nieuwe functionaliteiten zoals de Microsoft Teams‑koppeling, een acceptatieomgeving, en diverse optimalisaties in zowel backend als frontend.
                     <br/><br/>
                     Verder was ik verantwoordelijk voor het opstellen van een deploymentplan, het verbeteren van de UI/UX, het uitvoeren van testen, en het voorbereiden van presentaties voor interne stakeholders. Deze stage gaf me de kans om te werken aan een grootschalige, professionele codebase en om mijn vaardigheden in API‑ontwikkeling, architectuur, Angular, Flutter, en software‑integratie sterk te verdiepen.
+                    <br/><br/>
+                    In het realisatiedocument hieronder vind je uitgebreide informatie over mijn stage bij Cegeka, inclusief een volledig overzicht van wat ik heb gerealiseerd, hoe ik te werk ben gegaan en mijn persoonlijke reflectie op het traject.
                 </div>
                 <div><img src="/logo_black.png" alt="" className='w-80 lg:w-80' /></div>
             </div>
