@@ -10,7 +10,7 @@ const Internship = () => {
         <div className="h-[10vh] lg:h-[20vh] pt-24 w-full flex justify-center">
             <CodeTag size="l">Stage&nbsp;!</CodeTag>
         </div>
-        <div className="min-h-[90vh] lg:h-[80vh] lg:min-h-[80vh] mx-4 pt-12 lg:mx-24 gap-20">
+        <div className="min-h-[90vh] lg:h-[80vh] lg:min-h-[80vh] mx-4 pt-24 lg:pt-12 lg:mx-24 gap-20">
             <div className="flex flex-col lg:flex-row items-center">
                 <div className="w-full lg:w-3/4">
                     <h1 className='text-3xl font-semibold mb-4'>SafetySquad</h1>
