@@ -8,7 +8,7 @@ function AboutMe() {
     return (
         <div id="about-me" className="min-h-screen lg:h-screen mx-4 lg:mx-20 font-raleway">
             <div className="w-full h-[20vh] pt-24 mb-6 lg:mb-12 flex justify-center">
-                <CodeTag size="l" rotate="l">About&nbsp;me&nbsp;!</CodeTag>
+                <CodeTag size="l" rotate="l">Over&nbsp;mij&nbsp;!</CodeTag>
             </div>
             <div className="flex flex-col h-[80vh] gap-8 lg:flex-row-reverse">
                 <div className="w-full lg:w-1/2 flex flex-col">

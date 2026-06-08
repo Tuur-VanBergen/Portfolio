@@ -53,7 +53,7 @@ function NavBar() {
                                     : "hover:bg-[#00000020] hover:text-[#8f1600]"
                             }`}
                         >
-                            About me
+                            Over mij
                         </Link>
 
                         <Link 
@@ -64,7 +64,7 @@ function NavBar() {
                                     : "hover:bg-[#00000020] hover:text-[#8f1600]"
                             }`}
                         >
-                            Projects
+                            Projecten
                         </Link>
 
                         <Link 
@@ -75,7 +75,7 @@ function NavBar() {
                                     : "hover:bg-[#00000020] hover:text-[#8f1600]"
                             }`}
                         >
-                            Internship
+                            Stage
                         </Link>
                     </div>
 
@@ -122,7 +122,7 @@ function NavBar() {
                 onClick={() => setMenuOpen(false)}
                 className="hover:text-gray-300 transition"
             >
-                About me
+                Over mij
             </Link>
 
             <Link 
@@ -130,7 +130,7 @@ function NavBar() {
                 onClick={() => setMenuOpen(false)}
                 className="hover:text-gray-300 transition"
             >
-                Projects
+                Projecten
             </Link>
 
             <Link 
@@ -138,7 +138,7 @@ function NavBar() {
                 onClick={() => setMenuOpen(false)}
                 className="hover:text-gray-300 transition"
             >
-                Internship
+                Stage
             </Link>
         </div>
     </div>
